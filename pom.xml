@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.pampanet</groupId>
-  <artifactId>jersey-guice-bootstrap-archetype</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <artifactId>jersey-guice-webapp-archetype</artifactId>
+  <version>0.1.0-RELEASE</version>
   <packaging>maven-archetype</packaging>
 
-  <name>jersey-guice-bootstrap-archetype</name>
+  <name>jersey-guice-webapp-archetype</name>
 
   <build>
     <extensions>
