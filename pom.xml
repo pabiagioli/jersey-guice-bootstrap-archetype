@@ -8,7 +8,28 @@
   <packaging>maven-archetype</packaging>
 
   <name>jersey-guice-webapp-archetype</name>
+  <description>Archetype for building RESTful Web Services with Jersey 1.18.1 and Google Guice 3.0</description>
 
+  <developers>
+    <developer>
+      <name>Pablo Biagioli</name>
+      <email>pabiagioli@gmail.com</email>
+      <organization>PampaNet</organization>
+      <url>http://github.com/pabiagioli</url>
+    </developer>
+  </developers>
+  
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <repository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+  </distributionManagement>
+  
   <build>
     <extensions>
       <extension>
@@ -20,6 +41,17 @@
 
     <pluginManagement>
       <plugins>
+        <plugin>
+          <groupId>org.sonatype.plugins</groupId>
+          <artifactId>nexus-staging-maven-plugin</artifactId>
+          <version>1.6.3</version>
+          <extensions>true</extensions>
+          <configuration>
+            <serverId>ossrh</serverId>
+            <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+            <autoReleaseAfterClose>true</autoReleaseAfterClose>
+          </configuration>
+        </plugin>
         <plugin>
           <artifactId>maven-archetype-plugin</artifactId>
           <version>2.2</version>
