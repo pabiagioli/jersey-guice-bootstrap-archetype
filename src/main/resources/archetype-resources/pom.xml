@@ -7,6 +7,21 @@
 	<version>${version}</version>
 	<name>jersey-guice-bootstrap Maven Webapp</name>
 	<url>http://github.com/pabiagioli/jersey-guice-bootstrap</url>
+	<description>Archetype for building RESTful Web Services with Jersey 1.18.1 and Google Guice 3.0</description>
+	<scm>
+		<connection>scm:git:git@github.com:pabiagioli/jersey-guice-bootstrap-archetype.git</connection>
+		<developerConnection>scm:git:git@github.com:pabiagioli/jersey-guice-bootstrap-archetype.git</developerConnection>
+		<url>scm:git:git@github.com:pabiagioli/jersey-guice-bootstrap-archetype.git</url>
+		<tag>HEAD</tag>
+	</scm>
+	<developers>
+		<developer>
+			<name>Pablo Biagioli</name>
+			<email>pabiagioli@gmail.com</email>
+			<organization>PampaNet</organization>
+			<url>http://github.com/pabiagioli</url>
+		</developer>
+	</developers>
 	
 	<properties>
 		<version.jersey>1.18.1</version.jersey>
